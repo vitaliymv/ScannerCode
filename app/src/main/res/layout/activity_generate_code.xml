@@ -1,0 +1,52 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GenerateCode">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Введите текст:"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:inputType="textPersonName"/>
+
+    <CheckBox
+        android:layout_marginTop="20dp"
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сгенерировать QR код" />
+
+    <CheckBox
+        android:layout_marginTop="20dp"
+        android:id="@+id/checkBox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сгенерировать штрих-код" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="376dp"
+        android:layout_marginTop="20dp"
+
+        app:srcCompat="@color/zxing_status_text" />
+
+    <Button
+        android:id="@+id/generate_qr"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сгенерировать"
+        android:background="#EEE4E4" />
+
+
+
+</LinearLayout>
